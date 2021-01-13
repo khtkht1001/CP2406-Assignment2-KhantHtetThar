@@ -43,8 +43,8 @@ public class Simulator implements ActionListener, Runnable, MouseListener {
     private JRadioButton vertical = new JRadioButton("Vertical");
     //has traffic light selection
     private ButtonGroup selections2 = new ButtonGroup();
-    private JRadioButton hasLight = new JRadioButton("Traffic Light(True)");
-    private JRadioButton noLight = new JRadioButton("Traffic Light(False)");
+    private JRadioButton hasLight = new JRadioButton("Traffic Light(Yes)");
+    private JRadioButton noLight = new JRadioButton("Traffic Light(No)");
     //road length
     private JLabel label = new JLabel("Enter Road Length");
     private JTextField length = new JTextField("5");
@@ -198,7 +198,7 @@ public class Simulator implements ActionListener, Runnable, MouseListener {
             String direction = "east";
             int xPos = 0;
             int yPos = 0;
-            Boolean lightOnRoad = false;
+            boolean lightOnRoad = false;
             if(vertical.isSelected()){
                 orientation = "vertical";
             }
